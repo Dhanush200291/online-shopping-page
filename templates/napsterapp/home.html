@@ -1,0 +1,202 @@
+<!DOCTYPE Html>
+<html>
+{% load static %}
+<head>
+<title></title>
+</head>
+<body>
+<form class="home" action="register" method="POST">
+    {% csrf_token %}
+<table border="0" width="100%">
+<tr>
+    <td align="right"><img src="{% static 'images/napster.jpg'%}" alt="no image" height="45" width="45"/>
+    </td>
+<td align="center"><input type="text" placeholder="search for products,brands and more"></td>
+<th align="right"><a href="register">login & signup</th>
+<td align="center"><img src="{% static 'images/cart.png'%}" height="40" width="40"/></td>
+</tr>
+
+</table>
+<br>
+
+
+
+
+
+<table border="0" width="100%" bgcolor="blue" height="8%">
+<tr>
+<th width="14.2857%">
+<select id="TV">
+<option value="dress">TV's & Appliances</option>
+<option value="dress">T.V's</option>
+<option value="dress">Remotes</option>
+<option value="dress">Coolers</option>
+<option value="dress">A.C's</option>
+<option value="dress">Heaters</option>
+</th>
+
+<th width="14.2857%"><font color="white"></font>
+<select id="men">
+<option value="dress">Men</option>
+<option value="dress">Dresses</option>
+<option value="dress">Watches</option>
+<option value="dress">Shoes</option>
+<option value="dress">Sandals</option>
+<option value="dress">Jackets</option>
+</select>
+</th>
+<th width="14.2857%"><font color="white"></font>
+<select id="woman">
+<option value="dress">Woman</option>
+<option value="dress">Dresses</option>
+<option value="dress">Watches</option>
+<option value="dress">Makeup kits</option>
+<option value="dress">Sandals</option>
+</select>
+</th>
+<th width="14.2857%"><font color="white"></font>
+<select id="kids">
+<option value="dress">Kids</option>
+<option value="dress">Dresses</option>
+<option value="dress">Baby Kits</option>
+<option value="dress">Spectecles</option>
+<option value="dress">Sandals</option>
+</select>
+</th>
+    <th width="14.2857%"><font color="blue"></font>
+<select id="sports">
+<option value="dress">Sports & More</option>
+<option value="dress">Cricket bats</option>
+<option value="dress">Badminton</option>
+<option value="dress">Football</option>
+<option value="dress">Goggles</option>
+<option value="dress">Balls</option>
+</select>
+</th>
+    <th width="14.2857%"><font color="white"></font>
+<select id="Home & Furniture">
+<option value="dress">Homes & Furniture</option>
+
+<option value="dress">Tables</option>
+<option value="dress">Beds</option>
+<option value="dress">Chairs</option>
+<option value="dress">Sofa Set</option>
+<option value="dress">Lights</option>
+
+</select>
+
+</th></a>
+<th width="14.2857%"><button id="Offer Zone" onclick=Offer Zone()><font color="black"><a href="https://topdeal.qa/offerzone.html">Offer Zone</font></button></th></a>
+
+</tr>
+
+</table>
+<br>
+
+
+
+
+
+
+<table>
+<img src="{%static 'images\mob.png'%}" width="100%" height="50%">
+</table>
+<br>
+
+
+
+
+
+<td><h2>Mobiles</h2><hr></td>
+<br><br>
+
+<table border="0" width="100%">
+<tr>
+
+<th align="center"><img src="{%static 'images\infinix.png'%}" ><br><br>
+<figcaption align="center">Infinix hot10pro
+<br><a href="https://www.infinixmobiles.in/products/hot-10/"> Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\realme.png'%}" >
+<figcaption align="center">Realme C21
+<br><a href="https://www.realme.com/in/realme-c21">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\poco.png'%}">
+<figcaption align="center">Poco M3
+<br><a href="https://www.poco.in/">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\redmi.png'%}" >
+<figcaption align="center">Redmi 9pro
+<br><a href="https://www.mi.com/in/redmi-9-prime/">Details</figcaption></th></a>
+</tr>
+
+</table>
+<br><br>
+
+
+
+<td><h2>Men Shoes</h2><hr></td>
+<br><br>
+
+
+<table border="0" width="100%">
+<tr>
+<th align="center"><img src="{%static 'images\shoe1.jpg'%}"><br><br><br>
+    <figcaption align="center">Asics<br><a href="https://www.flipkart.com/density-socks-running-shoes-men/p/itm3f19bb0092230?pid=SHOFGV88CHDAFSHR&lid=LSTSHOFGV88CHDAFSHRTQQG8R&marketplace=FLIPKART&q=shoes&store=osp&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=a0544bcc-ef38-4b78-8b67-b476fa2196ce.SHOFGV88CHDAFSHR.SEARCH&ppt=sp&ppn=sp&ssid=uwtisvk3xc0000001628179960764&qH=b0a8b6f820479900">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\shoe4.jpg'%}"><br><br>
+<figcaption align="center">Roadster<br><a href="https://www.flipkart.com/aadi-running-shoes-men/p/itmcf583c3219aa2?pid=SHOFW9P34FRDMTND&lid=LSTSHOFW9P34FRDMTND3CGAZN&marketplace=FLIPKART&q=shoes&store=osp%2Fcil%2F1cu&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&fm=SEARCH&iid=b8565f91-6bd3-44f8-b759-fe54fb9820eb.SHOFW9P34FRDMTND.SEARCH&ppt=sp&ppn=sp&ssid=ks0o9x4b8g0000001628180216153&qH=b0a8b6f820479900">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\shoe2.jpg'%}"><br><br><br><br><figcaption align="center">Crocks<br><a href="https://www.flipkart.com/puma-zod-runner-v3-idp-running-shoes-men/p/itm3012b84405821?pid=SHOFUFGS87E9CFXC&lid=LSTSHOFUFGS87E9CFXC0G0QLI&marketplace=FLIPKART&q=shoes&store=osp%2Fcil%2F1cu&srno=s_1_22&otracker=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&fm=SEARCH&iid=b8565f91-6bd3-44f8-b759-fe54fb9820eb.SHOFUFGS87E9CFXC.SEARCH&ppt=sp&ppn=sp&qH=b0a8b6f820479900">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\shoe3.jpg'%}"><br><br><br><figcaption align="center">Adidas<br><a href="https://www.flipkart.com/beerock-oxygen-running-shoes-men/p/itmfhgh9zzebefbw?pid=SHOEGWUDGCKMDYEY&lid=LSTSHOEGWUDGCKMDYEYKD3UH4&marketplace=FLIPKART&q=shoes&store=osp%2Fcil%2F1cu&srno=s_1_29&otracker=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_1_na_na_ps&fm=SEARCH&iid=b8565f91-6bd3-44f8-b759-fe54fb9820eb.SHOEGWUDGCKMDYEY.SEARCH&ppt=sp&ppn=sp&qH=b0a8b6f820479900">Details</figcaption></th></a>
+</table>
+<br><br>
+
+
+
+
+<td><h2>Watches</h2><hr></td>
+<br><br>
+
+
+
+<table border="0" width="100%">
+<tr>
+<th align="center"><img src="{%static 'images\watch3.jpg'%}"><br>
+<figcaption align="center">Omega<br><a href="https://www.flipkart.com/trex-s-shock-sport-new-green-army-multi-function-durable-latest-stylish-water-shock-resistance-alarm-digital-watch-boys/p/itmc7723779ecb03?pid=WATFYGDPAZGSDFER&lid=LSTWATFYGDPAZGSDFERQQNWC7&marketplace=FLIPKART&q=watches+for+girls+and+men&store=r18%2Ff13&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=edc5db6c-b438-441e-8f19-fcbfb57861e0.WATFYGDPAZGSDFER.SEARCH&ppt=sp&ppn=sp&ssid=bwqb84vy4w0000001628180526330&qH=ce4291c579329e2b">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\watch2.jpg'%}">
+    <figcaption align="center">Fossil<br><a href="https://www.flipkart.com/trex-s-shock-sport-new-green-army-multi-function-durable-latest-stylish-water-shock-resistance-alarm-digital-watch-boys/p/itmc7723779ecb03?pid=WATFYGDPAZGSDFER&lid=LSTWATFYGDPAZGSDFERQQNWC7&marketplace=FLIPKART&q=watches+for+girls+and+men&store=r18%2Ff13&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=edc5db6c-b438-441e-8f19-fcbfb57861e0.WATFYGDPAZGSDFER.SEARCH&ppt=sp&ppn=sp&ssid=bwqb84vy4w0000001628180526330&qH=ce4291c579329e2b">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\watch1.jpg'%}"><br><br><br><br><figcaption align="center">Patke Philippe<br><a href="https://www.flipkart.com/clatter-watches-girls-new-model-combo-set-analog-watch/p/itm2931f95cdd69c?pid=WATFMYPFYCJX3W2B&lid=LSTWATFMYPFYCJX3W2BM9UVUL&marketplace=FLIPKART&q=watches+for+girls+and+men&store=r18%2Ff13&srno=s_1_4&otracker=search&otracker1=search&fm=SEARCH&iid=en_4jTLymMu2qkRU%2BlWiNZcmsqMqs6ANptvfgxtfuK3ZmmjpWstQhQZ9%2BmCOp8GUupa7a6eNo2WRZDuvbhj1tv2zQ%3D%3D&ppt=sp&ppn=sp&qH=ce4291c579329e2b">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\watch4.jpg'%}"><br><br><figcaption align="center">Wrogn<br><a href="https://www.flipkart.com/clatter-watches-girls-new-model-combo-set-analog-watch/p/itm2931f95cdd69c?pid=WATFMYPFYCJX3W2B&lid=LSTWATFMYPFYCJX3W2BM9UVUL&marketplace=FLIPKART&q=watches+for+girls+and+men&store=r18%2Ff13&srno=s_1_4&otracker=search&otracker1=search&fm=SEARCH&iid=en_4jTLymMu2qkRU%2BlWiNZcmsqMqs6ANptvfgxtfuK3ZmmjpWstQhQZ9%2BmCOp8GUupa7a6eNo2WRZDuvbhj1tv2zQ%3D%3D&ppt=sp&ppn=sp&qH=ce4291c579329e2b">Details</figcaption></th></a>
+</table>
+<br><br>
+
+
+
+<td colspan="5"><h2>Sports</h2><hr></td>
+<br><br>
+
+<table border="0" width="100%">
+<tr>
+<th align="center"><img src="{%static 'images\sport2.jpg'%}"><br><br>
+    <figcaption align="center">Lycan Bat<br><a href="https://www.flipkart.com/lycan-full-size-pvc-hard-plastic-cricket-bat-age-15-pvc-plastic/p/itm3c9987090ebd0?pid=BATFYF5WZP3GVYBN&lid=LSTBATFYF5WZP3GVYBNE5XNEQ&marketplace=FLIPKART&q=bats&store=search.flipkart.com&srno=s_1_5&otracker=search&otracker1=search&fm=SEARCH&iid=057b99cf-88eb-4863-a5df-b5a0a79ba179.BATFYF5WZP3GVYBN.SEARCH&ppt=pp&ppn=pp&ssid=82ol9dozeo0000001628180838107&qH=0c3f0a6e13afb470">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\sport3.jpg'%}"><br><br><br><br>
+    <figcaption align="center">Football<br><a href="https://www.flipkart.com/nivia-storm-football-size-5/p/itmf9ghreytypn55?pid=BALDYQ2TJVGKE7JP&lid=LSTBALDYQ2TJVGKE7JP5VVDWG&marketplace=FLIPKART&q=football&store=search.flipkart.com&srno=s_1_2&otracker=search&otracker1=search&fm=SEARCH&iid=b15e5662-e069-4be2-a49c-a9a77fef74d4.BALDYQ2TJVGKE7JP.SEARCH&ppt=sp&ppn=sp&ssid=4coueiojr40000001628180920695&qH=37b4e2d82900d5e9">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\sport4.jpg'%}"><br><br><br><br><figcaption align="center">Goggles<br><a href="https://www.flipkart.com/lyrovo-swimming-goggles-anti-fog-uv-protection-no-leaking-coated-lens-case/p/itm1aedd57f96201?pid=GOGFY7GRPGDUTDYG&lid=LSTGOGFY7GRPGDUTDYGSPQPPD&marketplace=FLIPKART&q=swimming+goggles&store=abc%2Fbyq%2Fptx&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=en_nMAi1lah1uo9t5lKuB7hdi4VyG1FhS4mZmRFG54L2IIDU%2Bz4ah%2FC%2BXLwDDjCSgT16amykJhc4BHC93lmifFrtA%3D%3D&ppt=sp&ppn=sp&ssid=6ku0kj7e0w0000001628181038794&qH=8523e864a927284c">Details</figcaption></th></a>
+
+<th align="center"><img src="{%static 'images\sport1.jpg'%}"><br><br><figcaption align="center">Badminton<br><a href="https://www.flipkart.com/apacs-n-force-111-ultra-graphite-38lbs-black-blue-unstrung-badminton-racquet/p/itmf37569258661a?pid=RAQFZ97NHHGBFPH3&lid=LSTRAQFZ97NHHGBFPH3WPIX8E&marketplace=FLIPKART&q=badminton&store=abc%2Fegs%2F5wq&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=SEARCH&iid=en_d%2F%2ByCgngpgO6aFq9go8fUrl%2BWPR6qzc1aiPRvaSRs9zbBrHzMW%2BwdbG98AqXQliL4Wh0iY29Xy7sDjmBN7J9ug%3D%3D&ppt=sp&ppn=sp&ssid=k46ispzodc0000001628181105300&qH=019b0b27113bc3d1">Details</figcaption></th></a>
+</table>
+<br><br>
+
+
+
+</form>
+
+</body>
+</html>
